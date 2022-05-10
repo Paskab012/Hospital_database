@@ -2,6 +2,8 @@
 
 > This Database is based on diagram project
 
+![Table Diagram](./schema_based_on_diagram.png)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
