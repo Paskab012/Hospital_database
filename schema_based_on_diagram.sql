@@ -11,3 +11,12 @@ CREATE TABLE patients (
       name VARCHAR(255), 
       PRIMARY KEY(id)
       );
+
+ CREATE TABLE medical_histories (
+	id INT GENERATED ALWAYS AS IDENTITY,
+	admitted_at timestamp,
+	patient_id INT,
+	status VARCHAR(100),
+	FOREIGN KEY (patient_id) REFERENCES patients(id),
+	PRIMARY KEY(id)
+);
